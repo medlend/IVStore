@@ -1,0 +1,15 @@
+IVS\IVStoreBundle\Entity\Point:
+    exclusion_policy: NONE
+    properties:
+        id:
+            groups: [point_d]
+            expose: true
+        x:
+            groups: [all]
+            expose: true
+        y:
+            groups: [all]
+            expose: true
+        zone:
+            groups: [point_d]
+            expose: true

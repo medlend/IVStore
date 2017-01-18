@@ -1,0 +1,15 @@
+IVS\IVStoreBundle\Entity\Zone:
+    exclusion_policy: NONE
+    properties:
+        id:
+            groups: [zone_id]
+            expose: true
+        nom:
+            groups: [all]
+            expose: true
+        couleur:
+            groups: [all]
+            expose: true
+        listePoints:
+            groups: [all]
+            expose: true

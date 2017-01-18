@@ -1,0 +1,8 @@
+iv_store:
+    resource: "@IVStoreBundle/Controller/"
+    type:     rest
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

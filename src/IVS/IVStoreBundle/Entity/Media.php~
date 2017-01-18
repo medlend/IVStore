@@ -1,0 +1,44 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: root
+ * Date: 17/01/17
+ * Time: 10:07
+ */
+
+namespace IVS\IVStoreBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+/**
+ * Zone
+ *
+ * @ORM\Table(name="media")
+ * @ORM\Entity
+ */
+class Media
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url", type="string", length=20, nullable=false)
+     */
+    private $url;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="datetime", length=20, nullable=false)
+     */
+    private $date;
+
+
+}

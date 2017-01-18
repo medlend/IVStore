@@ -1,0 +1,50 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: root
+ * Date: 16/01/17
+ * Time: 11:55
+ */
+
+namespace IVS\IVStoreBundle\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Zone
+ *
+ * @ORM\Table(name="Zone")
+ * @ORM\Entity
+ */
+class Zone
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=20, nullable=false)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="couleur", type="string", length=20, nullable=false)
+     */
+    private $couleur;
+
+    /**
+     * @var Point
+     * @ORM\OneToMany(targetEntity="IVS\IVStoreBundle\Entity\Point", mappedBy="zone",cascade={"persist","remove"})
+     */
+    private $listePoints;
+
+}

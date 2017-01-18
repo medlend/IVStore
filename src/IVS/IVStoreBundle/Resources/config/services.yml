@@ -1,0 +1,4 @@
+services:
+#    iv_store.example:
+#        class: IVS\IVStoreBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
